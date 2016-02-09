@@ -33,7 +33,7 @@ public:
 			for (int col = 0; col < 9; col++){
 				char ch = s[i];
 				if (ch != '.'){
-					grid[row][col].val = atoi(&ch);
+					grid[row][col].val = ch - '0';
 					grid[row][col].fixed = true;
 					grid[row][col].solved = true;
 				}
